@@ -111,3 +111,33 @@ A organização das ramificações segue os princípios do GitFlow:
 As novas funcionalidades são desenvolvidas em ramificações específicas e, após os testes, integradas à develop.
 
 Quando uma versão está pronta para publicação, suas alterações podem ser incorporadas à main.
+
+## Testes de acessibilidade e desempenho
+
+Durante o desenvolvimento da ONG Esperança, foram realizados testes
+manuais e automatizados para avaliar a experiência dos usuários.
+
+### Testes realizados
+
+- Navegação pelo teclado utilizando a tecla Tab.
+- Destaque visual dos elementos selecionados.
+- Identificação da página ativa com aria-current.
+- Validação do formulário com mensagens de erro e sucesso.
+- Teste de ampliação da página com zoom de 200%.
+- Teste de responsividade com largura de 320 pixels.
+- Verificação do funcionamento do menu mobile.
+
+### Resultados do Lighthouse (Mobile)
+
+| Categoria | Pontuação |
+|---|---:|
+| Desempenho | 95 |
+| Acessibilidade | 100 |
+| Boas práticas | 100 |
+| SEO | 91 |
+
+A imagem principal foi otimizada utilizando o formato WebP,
+contribuindo para melhorar o desempenho da aplicação.
+
+A avaliação automatizada do Lighthouse não substitui uma auditoria
+completa de conformidade com a WCAG 2.1 AA.
