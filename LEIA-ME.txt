@@ -1,0 +1,25 @@
+ONG ESPERANÇA — SPA reorganizada por responsabilidade
+
+ESTRUTURA
+html/index.html         Documento HTML único da SPA.
+css/style.css           Aparência, componentes e responsividade.
+imagens/voluntarios.png Imagem principal da página inicial.
+js/app.js               Templates, navegação SPA e menu responsivo.
+js/projetos.js          Dados e cards dos projetos.
+js/formulario.js        Validação de CPF, máscaras, feedback e preferência de área.
+
+COMO ABRIR
+1. Extraia o ZIP inteiro, mantendo estas quatro pastas juntas.
+2. No VS Code, abra a pasta ong-solidaria-spa-reorganizada.
+3. Clique com o botão direito em html/index.html e escolha Open with Live Server.
+4. O endereço será parecido com http://127.0.0.1:5500/html/index.html.
+5. Não abra diretamente por file://, pois import/export exige servidor local.
+
+A SPA usa #inicio, #projetos e #cadastro e não necessita dos HTML antigos
+projetos.html ou cadastro.html. Mantenha a sua pasta original como backup.
+Somente a preferência de área é salva em localStorage; o formulário não
+transmite dados à ONG nem guarda CPF, e-mail ou telefone no navegador.
+
+Esta versão foi reconstruída a partir do código e dos recursos compartilhados
+na conversa, incluindo a folha de estilos disponível. É um pacote separado:
+não modifica automaticamente os arquivos que estão no seu computador.
