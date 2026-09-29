@@ -26,13 +26,17 @@ const paginas = {
             </div>
             <div class="hero-imagem">
                 
+
 <img
-    src="../imagens/voluntarios.png"
+    src="../imagens/voluntarios.webp"
     alt="Voluntários organizando doações de alimentos e roupas"
     class="imagem-destaque"
+    width="1536"
+    height="1024"
     decoding="async"
     fetchpriority="high"
 >
+
 
             </div>
         </section>
