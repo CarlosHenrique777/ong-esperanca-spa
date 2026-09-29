@@ -96,3 +96,18 @@ O LocalStorage é utilizado somente para armazenar a preferência de área de vo
 ## Versionamento e publicação
 
 O desenvolvimento foi versionado com Git, disponibilizado no GitHub e publicado utilizando o GitHub Pages.
+
+## Estratégia de versionamento — GitFlow
+
+O projeto utiliza o Git e o GitHub para controlar suas versões.
+
+A organização das ramificações segue os princípios do GitFlow:
+
+- main: mantém a versão estável e publicada da aplicação.
+- develop: concentra as alterações em desenvolvimento.
+- feature/*: permite desenvolver funcionalidades de forma isolada.
+- hotfix/*: é destinada à correção de problemas urgentes na versão publicada.
+
+As novas funcionalidades são desenvolvidas em ramificações específicas e, após os testes, integradas à develop.
+
+Quando uma versão está pronta para publicação, suas alterações podem ser incorporadas à main.
