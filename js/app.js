@@ -25,9 +25,15 @@ const paginas = {
                 <a href="#cadastro" class="botao">Quero ser voluntário</a>
             </div>
             <div class="hero-imagem">
-                <img src="../imagens/voluntarios.png"
-                     alt="Voluntários organizando doações de alimentos e roupas"
-                     class="imagem-destaque">
+                
+<img
+    src="../imagens/voluntarios.png"
+    alt="Voluntários organizando doações de alimentos e roupas"
+    class="imagem-destaque"
+    decoding="async"
+    fetchpriority="high"
+>
+
             </div>
         </section>
         <section>
