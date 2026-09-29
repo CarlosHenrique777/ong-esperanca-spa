@@ -92,12 +92,13 @@ export function inicializarCadastro() {
         retorno.hidden = true;
 
         if (!validarCPF(cpf.value)) {
+            cpf.setAttribute("aria-invalid", "true");
             erro.textContent = "CPF inválido. Confira os números informados.";
             erro.hidden = false;
             cpf.focus();
             return;
         }
-
+cpf.removeAttribute("aria-invalid");
         retorno.hidden = false;
     });
 }

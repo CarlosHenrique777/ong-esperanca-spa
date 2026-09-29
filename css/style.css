@@ -831,3 +831,51 @@ footer p {
 @media (max-width: 576px) {
     .menu-toggle { width: auto; }
 }
+
+/* ==========================================
+   ACESSIBILIDADE - FOCO DO TECLADO
+========================================== */
+
+/* Destaque visual para elementos interativos */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #1d4ed8;
+    outline-offset: 3px;
+}
+
+/* Destaque específico para links no cabeçalho */
+
+header a:focus-visible,
+header button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Evita que elementos desabilitados pareçam clicáveis */
+
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* ACESSIBILIDADE - PÁGINA ATUAL */
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+/* ==========================================
+   ACESSIBILIDADE - CAMPO CPF COM ERRO
+========================================== */
+
+input#cpf[aria-invalid="true"] {
+    border: 2px solid #b91c1c;
+    background-color: #fff5f5;
+}

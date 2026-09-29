@@ -67,6 +67,7 @@ const paginas = {
 
                     <label for="cpf">CPF</label>
                     <input type="text" id="cpf" name="cpf"
+                    aria-describedby="erroCadastro"
                            placeholder="000.000.000-00" maxlength="14"
                            inputmode="numeric"
                            pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}-[0-9]{2}"
@@ -123,6 +124,27 @@ function carregarPagina() {
     }
 
     conteudo.innerHTML = paginas[pagina];
+    
+    // ACESSIBILIDADE - IDENTIFICAR A PÁGINA ATUAL
+
+    const linksMenu = document.querySelectorAll(
+        'nav a[href^="#"]'
+    );
+
+    linksMenu.forEach(function(link) {
+
+        if (link.getAttribute("href") === "#" + pagina) {
+
+            link.setAttribute("aria-current", "page");
+
+        } else {
+
+            link.removeAttribute("aria-current");
+
+        }
+
+    });
+
     if (pagina === "cadastro") {
         inicializarCadastro();
     }
